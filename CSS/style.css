@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;800&family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+:root{
+    --primaryfont: 'Poppins', sans-serif;
+    --seceondaryfont: 'PT Sans', sans-serif;
+    --primarycolor: #FC0;
+    --seceondarycolor:#353535;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--primaryfont);
+}
+
+/* NAV STARTS */
+
+nav .navbar-toggler{
+    border: 0;
+    box-shadow: none;!important
+}
+
+#mymenu ul li a{
+color: #353535;
+font-family: var(--primaryfont);
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 200%; 
+padding: 18px 22px 5px;
+position: relative;
+}
+
+#mymenu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--seceondarycolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.30;
+}
+
+#mymenu ul li:hover a::after{
+    width: 100%;
+
+}
+
+/* NAV ENDS */
+
+/* BANNER STARTS */
+
+#banner{
+    padding: 72px 0 144px ;
+}
+
+#banner .banner_cnt h4{
+    color: var(--seceondarycolor);
+    font-family: var(--primaryfont);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#banner .banner_cnt h1{
+    color: var(--seceondarycolor);
+    font-family:var(--seceondaryfont);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#banner .banner_cnt p{
+    margin: 25px 0 45px 0;
+    color: var(--seceondarycolor);
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.button{
+    padding: 16px 45px;
+    border-radius: 20px;
+    background: var(--primarycolor);
+    display: inline-block;
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+}
+.button_1{
+    padding: 16px 18px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    align-items: center;
+    color: black;
+    
+}
+
+#banner .social{
+    margin-top: 66px;
+}
+
+#banner .social h4{
+    color: var(--seceondarycolor);
+    font-family:var(--primaryfont);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 180%;
+}
+#banner .social ul li{
+    display: inline-block;
+}
+
+
+#banner .social ul li a{
+    width: 40px;
+    height: 40px;
+    background-color: #F4F3F3;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: black;
+
+}
+
+
+/* BANNER ENDS */
+
+/* about starts */
+
+#about{
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+
+#about .about_cnt h2{
+    color: var(--seceondarycolor);
+    font-family: var(--seceondaryfont);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 76px;
+}
+
+#about .about_cnt p{
+    color: var(--seceondarycolor);
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+    margin: 26px 0;
+}
+#about .button_1{
+    width: 171px;
+    height: 66px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 18px;
+    margin: 45px 0 86px 0;
+}
+
+#about .container{
+    position: relative;
+}
+
+#about .circle{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+
+}
+
+#service{
+    margin: 150px 0 165px 0;
+}
+
+#service .service_card{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+.service_card{
+    text-align: center;
+    padding: 45px 0 57px 0;
+}
+
+.service_img{
+    padding-bottom: 16px;
+}
+
+
+.service_cnt h5{
+    color: var(--seceondarycolor);
+    text-align: center;
+    font-family: var(--primaryfont);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+}
+
+.service_cnt p{
+    color: #7A7A7A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+}
